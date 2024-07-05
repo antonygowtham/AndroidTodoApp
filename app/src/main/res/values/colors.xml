@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#fcfc03</color>
+    <color name="text">#3D3A3A</color>
+    <color name="backGreen">#034212</color>
+    <color name="appColor">#DDD5DD</color>
+    <color name="headings">#FF000000</color>
+    <color name="hint">#D8D0D0</color>
+
+
+
+    <color name="newBackgroundColor">#FF123456</color>
+
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask"
+    android:background="#98DAD4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/topLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Task"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@+id/topLinear"
+        android:background="@drawable/black_border"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="What is to be done?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/taskDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Task Here"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:textColorHint="@color/hint"
+            android:backgroundTint="@color/headings"/>
+        <TextView
+            android:id="@+id/dueDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="Set due date"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/dueDateEditText"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:hint="Due Date"
+                android:inputType="date"
+                android:padding="8dp"
+                android:textColorHint="@color/hint"
+                android:backgroundTint="@color/headings"/>
+
+            <ImageView
+                android:id="@+id/datePickerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dueTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="Set due time"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/dueTimeEditText"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:hint="Due time"
+            android:inputType="time"
+            android:padding="8dp"
+            android:textColorHint="@color/hint"
+            android:backgroundTint="@color/headings"/>
+        <ImageView
+            android:id="@+id/timePickerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clock"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select List"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text"/>
+        <Spinner
+            android:id="@+id/prioritySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Priority"
+            android:entries="@array/list_options"
+            android:padding="8dp"
+            />
+        <Button
+            android:id="@+id/saveTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/headings"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Description"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/headings"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/editTaskDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/headings"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/headings"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editDueDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date"
+        android:inputType="date"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/headings" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Time"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/headings"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editDueTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Time"
+        android:inputType="time"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/headings" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select list"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/headings"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/prioritySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Priority"
+        android:entries="@array/list_options"
+        android:padding="8dp"
+        />
+
+    <!-- Add any other fields you need to edit here -->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="end">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/saveButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Save"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:backgroundTint="#ffffff"-->
+<!--            android:textColor="@color/backGreen" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/cancelButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cancel"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:backgroundTint="#ffffff"-->
+<!--            android:textColor="@color/backGreen" />-->
+
+<!--    </LinearLayout>-->
+</LinearLayout>
